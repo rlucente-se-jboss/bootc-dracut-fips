@@ -1,0 +1,19 @@
+{
+  "blueprint": {
+    "customizations": {
+      "user": [
+        {
+          "name": "${EDGE_USER}",
+          "password": "${EDGE_HASH}",
+          "key": "${SSH_PUB_KEY}",
+          "groups": [
+            "wheel"
+          ]
+        }
+      ],
+      "kernel": {
+        "append": "$BOOT_ARGS"
+      }
+    }
+  }
+}
