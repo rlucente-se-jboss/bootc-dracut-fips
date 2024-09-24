@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #
-# Launch virtual edge device but use bridged networking
+# Launch virtual edge device
 #
-virsh start cs9-edge-device && virsh console cs9-edge-device \
+virsh start rhel9-edge-device && virsh console rhel9-edge-device \
     2>&1 | tee output.txt

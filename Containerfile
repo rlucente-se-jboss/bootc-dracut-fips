@@ -1,4 +1,4 @@
-FROM quay.io/centos-bootc/centos-bootc:stream9
+FROM registry.redhat.io/rhel9/rhel-bootc:9.4
 
 # update initrd to include the fips module
 RUN    mkdir -p /usr/lib/dracut/dracut.conf.d \
